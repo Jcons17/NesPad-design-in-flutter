@@ -10,10 +10,13 @@ class NesPad extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     setLandscape();
-    return const MaterialApp(
+    return  MaterialApp(
+      theme: ThemeData(
+        fontFamily: "Pretendo"
+      ),
       debugShowCheckedModeBanner: false,
       title: 'NesPad',
-      home: Scaffold(
+      home:const Scaffold(
         backgroundColor: backgroundColor,
         body: Center(
           child: NesPadDesign(),
