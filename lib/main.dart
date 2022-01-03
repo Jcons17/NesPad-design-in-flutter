@@ -40,9 +40,9 @@ class NesPadDesign extends StatelessWidget {
           color: Colors.white,
           borderRadius: const BorderRadius.all(Radius.circular(5)),
           boxShadow: [
-            BoxShadow(color: gradientColor.withOpacity(0.6), blurRadius: 30),
-            BoxShadow(color: gradientColor.withOpacity(0.4), blurRadius: 50),
-            BoxShadow(color: gradientColor.withOpacity(0.2), blurRadius: 70),
+            BoxShadow(color: gradientColor.withOpacity(0.5), blurRadius: 30,spreadRadius: 1),
+            BoxShadow(color: gradientColor.withOpacity(0.3), blurRadius: 50,spreadRadius: 20),
+            BoxShadow(color: gradientColor.withOpacity(0.05), blurRadius: 70,spreadRadius: 60),
           ]),
       child: Container(
         decoration: BoxDecoration(
@@ -164,7 +164,7 @@ class NesPadDesign extends StatelessWidget {
               child: 
                 Container(
                   alignment: Alignment.center,
-                  child:const Text("NINTENDO ®" ,style: TextStyle(color: redColor,fontSize: 16,fontWeight: FontWeight.w900),),  
+                  child:const Text("N I N T E N D O" ,style: TextStyle(color: redColor,fontSize: 16,fontWeight: FontWeight.w900),),  
                 )
             ),
             Expanded(
